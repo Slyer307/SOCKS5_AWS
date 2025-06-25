@@ -1,2 +1,2 @@
 # free-socks5-telegram-aws
-Free and optimal Proxy SOCKS5 running on AWS for Telegram in Vietnam
+Setting up optimal SOCKS5 proxies on AWS for Telegram access in Vietnam
