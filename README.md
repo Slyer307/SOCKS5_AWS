@@ -38,17 +38,20 @@
 
 ## ⚙️ Cài đặt SOCKS5 Proxy
 
-### Cách nhanh nhất:
+### (1) **Cách nhanh nhất:**
 
 ```bash
 curl -O https://raw.githubusercontent.com/Slyer307/free-socks5-telegram-aws/main/setup-dante-443.sh
 chmod +x setup-dante-443.sh
 ./setup-dante-443.sh
+```
 
-   exit 0
+---
 
-**### Chuyển từ cổng 443 sang cổng 1080**
+### (2) **Chuyển từ cổng 443 sang cổng 1080**
+
 ```bash
 sudo nano /etc/danted.conf
-Thay port 443 thành 1080
+# Thay port 443 thành 1080
 sudo systemctl restart danted
+```
