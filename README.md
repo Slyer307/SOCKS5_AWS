@@ -1,4 +1,4 @@
-# 🛰️ Triển khai Proxy SOCKS5 trên AWS cho Telegram (Port 443, không xác thực)
+# 🛰️ Proxy SOCKS5 trên AWS cho Telegram (Port 443, không xác thực)
 
 > Dự án giúp bạn triển khai **SOCKS5 proxy** trên **AWS EC2 miễn phí**, tối ưu kết nối từ **Việt Nam**, đặc biệt dùng cho **Telegram**.
 
