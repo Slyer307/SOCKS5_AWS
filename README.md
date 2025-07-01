@@ -48,10 +48,10 @@ chmod +x setup-dante-443.sh
 
 ---
 
-### (2) **Chuyển từ cổng 443 sang cổng 1080**
+### (2) **Chuyển cổng kết nối**
 
 ```bash
 sudo nano /etc/danted.conf
-# Thay port 443 thành 1080
+# Thay port 443 thành 1080 (hoặc bất kỳ cổng nào khác)
 sudo systemctl restart danted
 ```
