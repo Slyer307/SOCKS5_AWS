@@ -48,7 +48,7 @@ chmod +x setup-dante-443.sh
 
 ---
 
-### (2) **Chuyển từ cổng 443 sang cổng 1080**
+### (2) **Chuyển từ cổng 443 sang cổng 1080:**
 
 ```bash
 sudo nano /etc/danted.conf
