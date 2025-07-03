@@ -8,7 +8,7 @@
 
 - Cài đặt máy ảo miễn phí AWS (f1-micro hoặc t4g.micro)
 - Tự động cài proxy SOCKS5 bằng Dante (cổng 443)
-- Không yêu cầu username/password
+- Bảo vệ bằng **username/password** mặc định: `proxyuser` / `telegram123`
 - Tự động khởi động khi reboot VPS
 - Tối ưu mạng cho kết nối ổn định và ping thấp từ Việt Nam
 
@@ -48,10 +48,19 @@ chmod +x setup-dante-443.sh
 
 ---
 
-### (2) **Chuyển cổng kết nối**
+### 🔐 Thông tin đăng nhập SOCKS5
+
+- Server: `your_vps_ip`
+- Port: `443`
+- Username: `proxyuser`
+- Password: `telegram123`
+
+---
+
+### 🧪 Kiểm tra kết nối từ máy client
 
 ```bash
-sudo nano /etc/danted.conf
-# Thay port 443 thành 1080 (hoặc bất kỳ cổng nào khác)
-sudo systemctl restart danted
+curl -x socks5h://proxyuser:telegram123@your_vps_ip:443 https://api.ipify.org
 ```
+
+> Lệnh trên sẽ in ra IP của VPS nếu proxy hoạt động bình thường.
