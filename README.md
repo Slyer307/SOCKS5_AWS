@@ -57,6 +57,34 @@ chmod +x setup-dante-443.sh
 
 ---
 
+### 🔐 Thay đổi thông tin đăng nhập mặc định
+
+**(1) Dừng dịch vụ**
+
+```bash
+sudo systemctl stop danted
+```
+
+**(2) Đổi username, ví dụ đổi từ proxyuser thành tgproxy**
+
+```bash
+sudo usermod -l tgproxy proxyuser
+```
+
+**(3) Đổi password**
+
+```bash
+sudo passwd tgproxy
+```
+
+**(4) Khởi động lại dịch vụ:**
+
+```bash
+sudo systemctl start danted
+```
+
+---
+
 ### 🧪 Kiểm tra kết nối từ máy client
 
 ```bash
