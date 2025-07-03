@@ -65,13 +65,13 @@ chmod +x setup-dante-443.sh
 sudo systemctl stop danted
 ```
 
-**(2) Đổi username, ví dụ đổi từ proxyuser thành tgproxy**
+**(2) Đổi tên truy cập, ví dụ đổi từ proxyuser thành tgproxy**
 
 ```bash
 sudo usermod -l tgproxy proxyuser
 ```
 
-**(3) Đổi password**
+**(3) Đổi mật khẩu**
 
 ```bash
 sudo passwd tgproxy
