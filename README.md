@@ -85,6 +85,27 @@ sudo systemctl start danted
 
 ---
 
+### ⚙️ Thay đổi cổng kết nối từ 443 sang 1 cổng khác (ví dụ 1080)
+
+Mở file:
+```bash
+sudo nano /etc/danted.conf
+```
+
+Bạn sẽ thấy cấu hình như:
+```bash
+internal: 0.0.0.0 port = 443
+```
+➡️ Sửa lại thành:
+```bash
+internal: 0.0.0.0 port = 1080
+```
+
+Lưu file và khởi động lại dante
+```bash
+sudo systemctl restart danted
+```
+
 ### 🧪 Kiểm tra kết nối từ máy client
 
 ```bash
